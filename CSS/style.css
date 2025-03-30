@@ -1,0 +1,265 @@
+*{
+  padding: 0;
+  margin:0;
+  }
+@font-face {
+  font-family: LoveBirch;
+  src: url(./Love\ Birch.otf);
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* ------------------------------------------------------------------------ */
+
+body{
+  min-height: 100vh;
+  cursor:pointer
+}
+.topper{
+  position:relative;
+  background-image:url(../Images/flowers1&2.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 40rem;
+  padding: 0;
+  
+  }
+.row-top{
+  background-color: #ffffffc0;
+  width:100%;
+  min-height: 20vh;
+  position:fixed;
+  padding:2%;
+}
+.row-top h1{
+  color:darkslateblue;
+  font-size: 4rem;
+  font-family:"LoveBirch";
+  font-weight: 600;
+}
+.row-top span{
+  color:#b92875;
+}
+
+
+/* NAVIGATION */
+
+ .nav ul{
+  width:100%;
+  list-style:none;
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+
+ }
+.nav li{
+  
+  transition: .7s ease;
+}
+.nav a{
+  color:darkslateblue;
+  text-decoration: none;
+  height:100%;
+  padding:0 5px;
+  display:flex;
+  align-items: center;
+}
+   
+.nav a:hover{
+  color:#b92875;
+  font-weight: bold;
+}
+
+.row-top button{
+  background-color: #b92875;
+  border:none;
+  padding:1% 2%;
+  margin-top: 2%;
+    }
+ 
+  
+ .sidebar{
+  position:fixed;
+  top:25%;
+  right:0;
+  height: 100%vh;
+  width:25vh;
+  flex-direction: column;
+  display:none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur (10px);
+  text-align: left;
+   z-index: 999;
+   }
+.sidebar li{
+  width:100%;
+  padding:1% 2% 0% 0%;
+  
+}
+.sidebar a{
+    width:25%;
+  }
+  .searchbar{
+    position:absolute;
+    left:70%;
+    top:100%;
+    background-color:white;
+    height:21px;
+    border:1px solid white;
+    width:25%;
+    justify-items: end;
+
+    } 
+    .mag{
+      justify-items: end;
+      background-color: #b61a6a;
+      width: 15px;
+      height:13px; 
+        
+  }
+  /* ----------------------------------------------------- */
+.section2{
+  background-color: #ffecf7;
+  padding:3%;
+}
+.dummy{
+  color: darkslateblue;
+  text-align: center;
+}
+.dummyp{
+  color:#afa2ab;
+  text-align: center;
+}
+.box{
+  align-items: center;
+}
+.s-menu{
+  color:#f771b7;
+}
+
+.s-menu li{
+  list-style: none;
+}
+.s-menu a{
+  text-decoration: none;
+}
+
+/* ----------------------------------------------------------- */
+.roses{
+display:inline;
+}
+.rose{
+  display:inline;
+  border:2px solid #b27392;
+  width:100%;
+  margin-left: 20%;
+  margin-top: 5%;
+
+}
+.words{
+  margin:1% 2%;
+}
+.roses h3{
+  color:#757575 ;
+  font-size:70%;
+
+}
+.roses p{
+  color:#727272 ;  
+}
+.foot{
+  background-color:#b61a6a;
+}
+
+.s-menu {
+  text-align:center;
+}
+.s-txt{
+  color: #df5ca0;
+  text-align: center;
+}
+
+.s-menu li a{
+  color: #ee66ae;
+  font-size: 80%;
+}
+.copywright{
+  color:#ee66ae;
+  margin-top: 2%;
+}
+.social{
+  font-size:1.5 rem;
+  background-color:#eb7ab8;
+  
+  border-radius: 70%;
+  font-size: medium;
+  width:11%;
+  height:30%;
+  /* padding:5%; */
+  margin:5%;
+}
+.pink a{
+  text-decoration:none;
+}
+.foot{
+  padding:5%;
+  }
+/*---------querries------------------ */
+@media(max-width:768px){
+  .rose{
+    width:60%;
+  }
+}
+  .s-menu{
+    justify-items: center;
+  }
+  .picture{
+    justify-items: center;
+    margin-left: 0;
+  }
+  .words {
+    text-align: center;
+  }
+/* } */
+.pink{
+  justify-items: center;
+}
+.menu-button{
+  display:none;
+}
+/* --------MEDIA QUERIES */
+@media(max-width:768px){
+  .roses{
+    text-align:center;
+    }
+  }
+
+  @media (max-width:768px){
+    .hideOnMobile{
+      display:none;
+    }
+  }
+  @media(max-width:768px){
+    .menu-button{
+      display:block;
+    }
+  }
+@media(max-width:400px){
+  .sidebar{
+    width:100%;
+  }
+}
+ 
+@media(max-width:768){
+  .s-txt{
+   justify-self: center;
+      }
+}
+ 
